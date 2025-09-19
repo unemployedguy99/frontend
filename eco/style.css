@@ -1,0 +1,230 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: flex-end;  /* moves content to right */
+  align-items: center;
+  background: url("images/bg.jpg") no-repeat center center/cover;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  position: relative;
+  overflow: hidden;
+  padding-right: 130px; /* optional: adds spacing from right edge */
+}
+
+
+/* Dark overlay */
+.overlay {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.4); /* adjust darkness if needed */
+  z-index: 0;
+}
+
+/* Centered login form */
+.login-wrapper {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 380px;
+  padding: 20px;
+}
+
+/* Glassmorphism Login Box */
+.login-form {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 40px 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.login-form h2 {
+  margin-bottom: 25px;
+  text-align: center;
+  color: #070707;
+  font-size: 24px;
+}
+
+/* Tabs */
+.tabs {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+  gap:20px
+}
+
+.tab-btn {
+  flex: 1;
+  padding: 15px;
+  border: none;
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.8); /* light background */
+  color: #070707; /* dark text */
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  
+}
+
+.tab-btn.active {
+  background: #d08df9; /* orange highlight */
+  color: rgb(20, 19, 19);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.tab-btn:hover {
+  background: rgba(255,255,255,0.3);
+}
+.tab-btn:hover:not(.active) {
+  background: rgba(255, 255, 255, 0.95);
+}
+/* Inputs */
+.input-group {
+  margin-bottom: 20px;
+}
+
+.login-form input {
+  width: 100%;
+  padding: 12px 15px;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  outline: none;
+ 
+  transition: background 0.3s;
+}
+
+.login-form input:focus {
+  background: rgba(255, 255, 255, 0.9);
+}
+
+/* Button */
+.login-form button {
+  width: 100%;
+  padding: 12px;
+  background: #d08df9;
+
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.login-form button:hover {
+  background: rgba(255, 255, 255, 0.8);
+}
+
+/* Links for admin */
+.links {
+  margin-top: 12px;
+  text-align: center;
+}
+
+.links a {
+  color: #070707;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.links a:hover {
+  text-decoration: underline;
+}
+
+/* Hide inactive form */
+.hidden {
+  display: none;
+}
+
+/* Message text */
+#studentMsg,
+#adminMsg {
+  margin-top: 12px;
+  text-align: center;
+  font-size: 18px;
+  color: rgb(20, 20, 20);
+}
+/* Navbar */
+.navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
+  background: rgba(0, 0, 0, 0.3); /* semi-transparent background */
+  backdrop-filter: blur(6px);
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.nav-logo {
+  height: 40px;
+}
+
+.nav-title {
+  font-size: 22px;
+  font-weight: bold;
+  color: white;
+}
+
+.nav-right a {
+  margin-left: 20px;
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.nav-right a:hover {
+  color: #ff9800; /* highlight on hover */
+}
+.content {
+  width: 1200px;
+  height: auto;
+  margin:auto;
+  color:black;
+  position: relative;
+}
+.content{
+  padding-left: 100px;
+  padding-bottom: 25px;
+  font-family: cursive;
+  letter-spacing: 1.2px;
+  line-height: 30px;;
+
+}
+.content h1{
+  font-size: 50px;
+  margin-bottom: 50px;
+  color: black;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+.p1{
+  font-size:26px;
+  margin-bottom: 20px;
+  font-family: cursive;     
+}
+.p2{
+  font-size:26px;
+  margin-bottom: 30px;
+  font-family: cursive;
+}
